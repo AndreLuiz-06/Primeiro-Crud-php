@@ -1,0 +1,130 @@
+/* Container do formulário de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Título */
+.login-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botão de login */
+.login-container input[type="submit"] {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #00c6ff;
+}
+
+/* Mensagem de erro */
+.erro-login {
+    background-color: #ffdddd;
+    color: #b30000;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Fundo da página home */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container central */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Cartão de boas-vindas */
+.welcome-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    animation: slideUp 0.7s ease;
+}
+
+/* Animação */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Título */
+.welcome-card h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #fff;
+}
+
+/* Parágrafo */
+.welcome-card p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+/* Botão logout */
+.logout-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #ff1c1c;
+}
